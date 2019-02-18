@@ -31,7 +31,7 @@ def main():
     Gs.print_layers()
     i=0
 
-    while i<400:
+    while i<10:
 
         # Pick latent vector.
         rnd = np.random.RandomState(5)
