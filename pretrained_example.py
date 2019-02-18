@@ -44,7 +44,7 @@ def main():
         # Save image.
         os.makedirs(config.result_dir, exist_ok=True)
         png_filename = os.path.join(config.result_dir, 'example'+str(i)+'.png')
-        PIL.Image.fromarray(images[0], 'RGB').save(png_filename)
+        PIL.Image.fromarray(images[i], 'RGB').save(png_filename)
         i=i+1
        
 
