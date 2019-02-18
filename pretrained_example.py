@@ -38,12 +38,12 @@ def main():
         
         #rnd = np.random.RandomState(5)
        
-        #latents = rnd.randn(1, Gs.input_shape[1])
+        latents = rnd.randn(1, Gs.input_shape[1])
         
         
  
         # Generate image.
-        latents = tf.random_normal([self.minibatch_per_gpu] + Gs_clone.input_shape[1:])
+       
         images = Gs.get_output_for(latents, None, is_validation=True, randomize_noise=True)
         images = tflib.convert_images_to_uint8(images)
 
